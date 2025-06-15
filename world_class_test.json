@@ -20,6 +20,98 @@
       }
     }
   ],
+  "questions": {
+    "general": [
+      {
+        "id": "GQ001",
+        "question": "Какой у вас опыт работы в фитнес-индустрии?",
+        "type": "text",
+        "required": true
+      },
+      {
+        "id": "GQ002",
+        "question": "Какие сертификаты у вас есть?",
+        "type": "multiselect",
+        "options": ["Персональный тренер", "Групповой тренер", "Инструктор по плаванию", "Другое"],
+        "required": true
+      }
+    ],
+    "group": [
+      {
+        "id": "GRQ001",
+        "question": "Какой опыт проведения групповых занятий?",
+        "type": "text",
+        "required": true
+      },
+      {
+        "id": "GRQ002",
+        "question": "Какие групповые программы вы ведете?",
+        "type": "multiselect",
+        "options": ["Йога", "Пилатес", "Функциональный тренинг", "Аэробика", "Другое"],
+        "required": true
+      }
+    ],
+    "gym": [
+      {
+        "id": "GYQ001",
+        "question": "Опыт работы в тренажерном зале?",
+        "type": "text",
+        "required": true
+      },
+      {
+        "id": "GYQ002",
+        "question": "Знание техники выполнения упражнений?",
+        "type": "rating",
+        "scale": 5,
+        "required": true
+      }
+    ],
+    "kids": [
+      {
+        "id": "KQ001",
+        "question": "Опыт работы с детьми?",
+        "type": "text",
+        "required": true
+      },
+      {
+        "id": "KQ002",
+        "question": "Возрастные группы детей",
+        "type": "multiselect",
+        "options": ["3-6 лет", "7-12 лет", "13-16 лет"],
+        "required": true
+      }
+    ],
+    "manager": [
+      {
+        "id": "MQ001",
+        "question": "Опыт управления персоналом?",
+        "type": "text",
+        "required": true
+      },
+      {
+        "id": "MQ002",
+        "question": "Навыки работы с клиентами",
+        "type": "rating",
+        "scale": 5,
+        "required": true
+      }
+    ],
+    "water": [
+      {
+        "id": "WQ001",
+        "question": "Опыт работы в бассейне?",
+        "type": "text",
+        "required": true
+      },
+      {
+        "id": "WQ002",
+        "question": "Типы водных программ",
+        "type": "multiselect",
+        "options": ["Аквааэробика", "Обучение плаванию", "Аквафитнес", "Другое"],
+        "required": true
+      }
+    ]
+  },
   "settings": {
     "timeout": 5000,
     "retry_count": 3,

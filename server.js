@@ -15,6 +15,21 @@ server.get('/api/test-cases', (req, res) => {
   res.json(data);
 });
 
+server.get('/api/questions', (req, res) => {
+  const data = router.db.get('questions').value();
+  res.json(data);
+});
+
+server.get('/api/questions/:category', (req, res) => {
+  const category = req.params.category;
+  const data = router.db.get(`questions.${category}`).value();
+  if (data) {
+    res.json(data);
+  } else {
+    res.status(404).json({ error: 'Category not found' });
+  }
+});
+
 server.get('/api/settings', (req, res) => {
   const data = router.db.get('settings').value();
   res.json(data);
